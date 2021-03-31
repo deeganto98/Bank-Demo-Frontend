@@ -1,13 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
 html,
 body {
     height: 100%;
+    font-family: '  Raleway';
 }
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .mat-drawer-container {
@@ -16,4 +23,8 @@ body {
 
 .mat-drawer-container {
     background-color: #fff;
+}
+
+.mat-drawer {
+    background-color: #364547;
 }

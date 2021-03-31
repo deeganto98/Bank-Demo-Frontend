@@ -13,6 +13,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { VehicleLoanComponent } from './vehicle-loan/vehicle-loan.component';
 import { WalletComponent } from './wallet/wallet.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TermsComponent } from './terms/terms.component';
 
 
 
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeLoanComponent,
     PaymentComponent,
     VehicleLoanComponent,
-    WalletComponent
+    WalletComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
