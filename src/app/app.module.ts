@@ -12,6 +12,9 @@ import { HomeLoanComponent } from './home-loan/home-loan.component';
 import { PaymentComponent } from './payment/payment.component';
 import { VehicleLoanComponent } from './vehicle-loan/vehicle-loan.component';
 import { WalletComponent } from './wallet/wallet.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { WalletComponent } from './wallet/wallet.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule, 
+    ReactiveFormsModule, 
+
   ],
   providers: [],
   bootstrap: [AppComponent]

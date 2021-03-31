@@ -1,25 +1,50 @@
+<mat-sidenav-container>
+    <mat-sidenav position="end" mode="over" [(opened)]="opened">
+        <i class="fa fa-times close-btn" (click)="toggle()" aria-hidden="true"></i>
+        <div class="sign-up">
+            <h1>Create New Account</h1>
+            <form [formGroup]="signup_form" class="sign-up-form" autocomplete="off">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput formControlName="signup_firstname" aria-placeholder="John">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="signup_lastname" aria-placeholder="Doe">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="signup_email" aria-placeholder="johndoe@gmail.com">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Age</mat-label>
+                    <input matInput formControlName="signup_age" aria-placeholder="42">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="signup_username" aria-placeholder="johndoe42">
+                </mat-form-field>
+                <button mat-raised-button class="acc-create-btn" color="primary">Create</button>
+            </form>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="home-page">
+            <div class="top">
+                <ul>
+                    <li><img src="./../../assets/bank-logo.png" height="70px"></li>
+                    <li><a href="/"><span>Loot Bank</span></a></li>
+                    <li style="float:right"><a href="javascript:void(0)" (click)="toggle()"><span>Sign Up</span></a></li>
+                    <li style="float:right"><a href=""><span>Sign in</span></a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="banner">
+                </div>
 
-<div class="sign-up">
-    <form [formGroup]="signup_form" class="sign-up-form">
-        <mat-form-field appearance="outline">
-            <mat-label>First Name</mat-label>
-            <input matInput formControlName="signup_firstname" aria-placeholder="John">
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>Last Name</mat-label>
-            <input matInput formControlName="signup_lastname" aria-placeholder="Doe">
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput type="email" formControlName="signup_email" aria-placeholder="johndoe@gmail.com">
-          </mat-form-field>
-          <mat-form-field appearance="outline" >
-            <mat-label>Age</mat-label>
-            <input matInput formControlName="signup_age" aria-placeholder="42">
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>Username</mat-label>
-            <input matInput formControlName="signup_username" aria-placeholder="johndoe42">
-          </mat-form-field>
-    </form>
-</div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
