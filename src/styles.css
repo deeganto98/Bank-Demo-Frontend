@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 html,
 body {
     height: 100%;
@@ -27,4 +28,8 @@ a {
 
 .mat-drawer {
     background-color: #364547;
+}
+
+mat-label {
+    font-family: 'Josefin Sans';
 }

@@ -14,6 +14,8 @@ import { VehicleLoanComponent } from './vehicle-loan/vehicle-loan.component';
 import { WalletComponent } from './wallet/wallet.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TermsComponent } from './terms/terms.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,7 +29,8 @@ import { TermsComponent } from './terms/terms.component';
     PaymentComponent,
     VehicleLoanComponent,
     WalletComponent,
-    TermsComponent
+    TermsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { TermsComponent } from './terms/terms.component';
     MaterialModule,
     FormsModule, 
     ReactiveFormsModule, 
+    HttpClientModule
 
   ],
   providers: [],

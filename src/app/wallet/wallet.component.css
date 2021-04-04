@@ -1,0 +1,48 @@
+.wallet-container {
+    background-color: #2f5d62;
+    height: 100%;
+    text-align: center;
+}
+
+.wallet {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    padding: 30px;
+    background-color: #ffb037;
+    border-radius: 15px;
+}
+
+.wallet h1 {
+    font-size: 30px;
+    font-family: Georgia;
+    color: #fff;
+}
+
+.add-money-btn {
+    width: fit-content;
+    position: relative;
+    float: right;
+    left: 84%;
+    bottom: 75px;
+    height: 63px;
+}
+
+.wallet img {
+    margin: 0 auto;
+}
+
+.wallet h2 {
+    color: #D22B27;
+}
+
+.msg {
+    position: relative;
+    bottom: 70px;
+    right: 32%;
+    color: #D22B27;
+}

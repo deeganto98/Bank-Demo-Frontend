@@ -52,22 +52,36 @@ li a:hover {
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .sign-up {
     position: relative;
-    top: 15%;
+    top: 10%;
     width: 620px;
     text-align: center;
+}
+
+.sign-up h1 {
+    font-family: "Josefin Sans";
 }
 
 input {
     height: 25px;
 }
 
+mat-checkbox {
+    text-align: right;
+}
+
+mat-checkbox span a {
+    color: #ffb037;
+}
+
 .acc-create-btn {
     width: 20%;
-    margin: 0 auto;
+    margin: 10px auto 0px;
 }
 
 .home-page {

@@ -25,6 +25,9 @@
     font-size: 20px;
     position: relative;
     top: 25px;
+    font-weight: bold;
+    color: #D22B27;
+    font-family: 'Merriweather';
 }
 
 .login-form-container span {
@@ -33,6 +36,12 @@
     bottom: 40px;
     left: 45px;
     font-size: 15px;
+    color: #213065;
+}
+
+.login-form-container span a {
+    color: #213065;
+    font-family: 'Josefin Sans';
 }
 
 .login-form {

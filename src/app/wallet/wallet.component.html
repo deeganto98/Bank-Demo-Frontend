@@ -1,1 +1,14 @@
-<p>wallet works!</p>
+<div class="wallet-container">
+    <app-navbar></app-navbar>
+    <div class="wallet">
+        <h1>Loot Bank Wallet</h1>
+        <img src="../../assets/wallet.png" width="70px">
+        <h2>Wallet Balance : {{walletAmount}}</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>Add Money to Wallet</mat-label>
+            <input matInput [(ngModel)]="addAmount" placeholder="johndoekills....">
+        </mat-form-field>
+        <button mat-raised-button (click)="addMoney()" class="add-money-btn" color="primary">+</button>
+        <div class="msg">{{message}}</div>
+    </div>
+</div>

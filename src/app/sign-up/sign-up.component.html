@@ -4,24 +4,32 @@
         <div class="sign-up">
             <h1>Create New Account</h1>
             <form [formGroup]="signup_form" class="sign-up-form" autocomplete="off">
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="fill">
                     <mat-label>First Name</mat-label>
                     <input matInput formControlName="signup_firstname" placeholder="John">
                 </mat-form-field>
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="fill">
                     <mat-label>Last Name</mat-label>
                     <input matInput formControlName="signup_lastname" placeholder="Doe">
                 </mat-form-field>
-                <mat-form-field appearance="outline">
-                    <mat-label>Email</mat-label>
-                    <input matInput type="email" formControlName="signup_email" placeholder="johndoe@gmail.com">
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="signup_password" placeholder="johndoekills....">
                 </mat-form-field>
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="fill">
                     <mat-label>Age</mat-label>
                     <input matInput formControlName="signup_age" placeholder="42">
                 </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="signup_email" placeholder="johndoe@gmail.com">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Branch Name</mat-label>
+                    <input matInput formControlName="signup_branch" placeholder="Kalkaji">
+                </mat-form-field>
                 <mat-checkbox class="example-margin"><span>I agree with the <a href="/terms">Terms & Conditons</a></span></mat-checkbox>
-                <button mat-raised-button class="acc-create-btn" color="primary">Create</button>
+                <button mat-raised-button (click)="signup()" class="acc-create-btn" color="primary">Sign up</button>
             </form>
         </div>
     </mat-sidenav>
@@ -32,7 +40,7 @@
                     <li><img src="./../../assets/bank-logo.png" height="68px"></li>
                     <li><a href="/"><span>Loot Bank</span></a></li>
                     <li style="float:right"><a href="javascript:void(0)" (click)="toggle()"><span>Sign Up</span></a></li>
-                    <li style="float:right"><a href=""><span>Sign in</span></a></li>
+                    <li style="float:right"><a href="/login"><span>Sign in</span></a></li>
                 </ul>
             </div>
             <div class="main-content">

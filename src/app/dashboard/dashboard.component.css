@@ -1,0 +1,28 @@
+.dashboard-container {
+    background-color: #2f5d62;
+    height: 100%;
+}
+
+.user-info {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #364547;
+    position: relative;
+    top: 30px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.user-info>div {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info>div>span {
+    padding: 10px;
+    color: #fff;
+}
